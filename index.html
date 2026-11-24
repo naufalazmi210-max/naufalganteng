@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff1f3">
+  <title>Little Place for Us ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floaters" aria-hidden="true">
+    <span>♡</span><span>✦</span><span>♥</span><span>♡</span><span>✧</span>
+  </div>
+
+  <main class="wrap">
+    <section class="lock-card" id="lockScreen">
+      <div class="tiny-heart">♡</div>
+      <p class="eyebrow">a little surprise for you</p>
+      <h1>Hi, my favorite person!</h1>
+      <p class="subtitle">Ada sesuatu kecil yang mau aku tunjukin.<br>Masukin tanggal spesial kita, ya.</p>
+
+      <div class="pin-dots" id="pinDots" aria-label="6 digit kode">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <p class="feedback" id="feedback" aria-live="polite">petunjuk: 6 angka yang punya arti buat kita ♡</p>
+
+      <div class="keypad" id="keypad">
+        <button data-digit="1">1</button><button data-digit="2">2</button><button data-digit="3">3</button>
+        <button data-digit="4">4</button><button data-digit="5">5</button><button data-digit="6">6</button>
+        <button data-digit="7">7</button><button data-digit="8">8</button><button data-digit="9">9</button>
+        <button class="empty" disabled></button><button data-digit="0">0</button><button id="delete" class="delete">⌫</button>
+      </div>
+      <p class="bottom-note">made with love, just for you <span>♥</span></p>
+    </section>
+
+    <section class="love-card hidden" id="loveScreen">
+      <p class="eyebrow">you made it ♡</p>
+      <h1>For you, always.</h1>
+      <p class="subtitle">akhirnya kebuka juga hehe. ini ada sedikit sesuatu dari aku buat kamu.</p>
+
+      <div class="photo-frame">
+        <img src="assets/foto-kita.jpg" alt="Foto kita">
+        <span class="photo-sticker sticker-one">♡</span>
+        <span class="photo-sticker sticker-two">✿</span>
+      </div>
+
+      <div class="letter">
+        <div class="letter-top">♡ a note for my favorite human ♡</div>
+        <p>hai kamu, orang yang selalu punya tempat spesial di hari-hari aku.</p>
+        <p>makasih ya udah hadir dan bikin banyak hal sederhana jadi terasa lebih menyenangkan. mungkin aku nggak selalu jago nunjukin rasa sayang, kadang juga masih suka bikin kamu kesel, tapi aku harap kamu tahu kalau aku selalu menghargai keberadaan kamu.</p>
+        <p>aku nggak minta semuanya harus selalu sempurna. kita jalanin pelan-pelan aja, saling ngerti, saling cerita, dan saling dukung. kalau ada hari yang berat, semoga kita tetap bisa jadi tempat pulang yang nyaman satu sama lain.</p>
+        <p>pokoknya, jangan lupa bahagia, jangan terlalu keras sama diri sendiri, dan tetap jadi diri kamu yang aku kenal. seneng banget bisa punya cerita bareng kamu.</p>
+        <p class="sign">with lots of love,<br><b>someone who cares about you ♡</b></p>
+      </div>
+
+      <button class="music-button" id="musicButton">♫ Putar lagu kita</button>
+      <p class="music-hint" id="musicHint">backsound: Perfect — Ed Sheeran</p>
+      <audio id="song" src="assets/perfect.mp3" preload="none" loop></audio>
+      <div class="end-stickers">💗　🧸　🌷　✨</div>
+      <button class="replay" id="replay">lihat halaman awal</button>
+    </section>
+    <footer>made with ♡</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

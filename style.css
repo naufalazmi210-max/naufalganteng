@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--pink:#e78da2;--dark:#654550;--soft:#fff8f8}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:linear-gradient(145deg,#fff5f5,#fbe5ec 55%,#fff8f1);color:var(--dark);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+.wrap{width:min(100% - 30px,520px);margin:35px auto 20px;position:relative;z-index:1}
+.lock-card,.love-card{background:rgba(255,255,255,.84);border:1px solid #fff;border-radius:28px;box-shadow:0 18px 55px rgba(166,99,119,.13);padding:34px 25px;text-align:center;backdrop-filter:blur(8px)}
+.tiny-heart{font-size:34px;color:var(--pink);margin-bottom:8px}
+.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#c17b90;font-weight:700}
+h1{font-family:'Playfair Display',serif;font-size:clamp(30px,8vw,42px);line-height:1.15;margin:12px 0;color:#704c59}
+.subtitle{font-size:14px;line-height:1.8;color:#987b84}
+.pin-dots{display:flex;justify-content:center;gap:13px;margin:27px 0 12px}
+.pin-dots i{width:13px;height:13px;border:1.5px solid #dfa5b3;border-radius:50%;background:transparent}
+.pin-dots i.filled{background:var(--pink);border-color:var(--pink);box-shadow:0 0 0 4px #fbe8ed}
+.feedback{font-size:11px;color:#b07d8b;min-height:18px;margin:0 0 16px}
+.keypad{display:grid;grid-template-columns:repeat(3,65px);justify-content:center;gap:10px}
+.keypad button{height:53px;border:1px solid #f4dce3;background:#fff8fa;border-radius:17px;color:#805866;font-size:19px;font-weight:600;cursor:pointer;transition:.15s}
+.keypad button:active{transform:scale(.94);background:#fce8ee}
+.keypad .empty{visibility:hidden}.keypad .delete{font-size:22px}
+.bottom-note{font-size:11px;color:#bd96a1;margin:25px 0 0}.bottom-note span{color:#e78da2}
+.hidden{display:none!important}
+.love-card{padding:32px 22px}
+.photo-frame{position:relative;width:min(100%,340px);margin:25px auto 22px;padding:9px;background:white;border-radius:20px;box-shadow:0 9px 28px #c98b9a35;transform:rotate(-1deg)}
+.photo-frame img{display:block;width:100%;max-height:440px;object-fit:cover;border-radius:13px}
+.photo-sticker{position:absolute;color:#e58aa1;text-shadow:0 2px 5px white;font-size:35px}
+.sticker-one{top:-20px;right:-13px}.sticker-two{bottom:-18px;left:-13px}
+.letter{background:#fff8f6;border:1px dashed #e8b9c4;border-radius:18px;padding:21px 19px;text-align:left;font-size:13px;line-height:1.9;color:#80636d}
+.letter-top{text-align:center;color:#c17b90;font-size:11px;letter-spacing:1px;margin-bottom:15px}
+.letter p{margin:0 0 13px}.letter .sign{text-align:right;margin:18px 0 0;color:#a66e80}
+.music-button{margin-top:23px;border:0;border-radius:30px;padding:13px 22px;background:#d9829a;color:white;font:600 13px 'DM Sans';box-shadow:0 7px 18px #d9829a44;cursor:pointer}
+.music-hint{font-size:11px;color:#b18b96}.end-stickers{font-size:24px;margin:18px 0}
+.replay{border:0;background:transparent;color:#b17a8a;text-decoration:underline;font:12px 'DM Sans';cursor:pointer}
+footer{text-align:center;font-size:10px;color:#bd96a1;padding:18px}
+.floaters span{position:fixed;color:#e8a2b3;opacity:.35;animation:float 8s ease-in-out infinite;font-size:25px;z-index:0}
+.floaters span:nth-child(1){top:12%;left:8%}.floaters span:nth-child(2){top:25%;right:8%;animation-delay:1s}.floaters span:nth-child(3){bottom:15%;left:10%;animation-delay:2s}.floaters span:nth-child(4){bottom:30%;right:7%;animation-delay:3s}.floaters span:nth-child(5){top:55%;left:4%;animation-delay:4s}
+@keyframes float{50%{transform:translateY(-18px) rotate(15deg)}}
+@media(max-width:420px){.wrap{margin-top:18px}.lock-card,.love-card{padding:28px 17px}.keypad{gap:8px}.keypad button{height:50px}}
